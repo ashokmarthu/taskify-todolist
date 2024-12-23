@@ -1,0 +1,84 @@
+.input {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  position: relative;
+}
+.input_box {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 25px;
+  border: none;
+  box-shadow: inset 0 0 4px black;
+}
+.input_box--edit {
+  border-radius: 5px;
+  font-size: 10px;
+  border: none;
+  outline: 1px solid black;
+}
+.input_box--edit:focus {
+  border-radius: 5px;
+  outline: 1px solid black;
+}
+.input_box:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+}
+.input_submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  right: 0px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #0096d6;
+  font-size: 15px;
+  box-shadow: 0 0 10px black;
+}
+
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+.todo_list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.todo_single {
+  display: flex;
+  padding: 20px;
+  background-color: yellow;
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+.todo_single--text {
+  flex: 1;
+  padding: 5px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+@media (max-width: 900px) {
+  .todo_single {
+    width: 100%;
+  }
+  .todo_list {
+    width: 95%;
+  }
+  .input {
+    width: 95%;
+  }
+}
